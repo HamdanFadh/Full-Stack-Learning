@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul>
+        <li>"new" to add a todo</li>
+        <li>"list" to view all todos</li>
+        <li>"quit" to quit app</li>
+    </ul>
+    <script>
+        var todo = [];
+        var input = prompt("What todo");
+        while(input !== "quit"){
+            if(input === "list"){
+                console.log(todo);
+            } else if(input === "new"){
+                var newToDo = prompt("Apa aja?");
+                todo.push(newToDo);
+            }
+            input = prompt("What todo?");
+        };
+        alert("Ok Quit");
+
+    </script>
+</body>
+</html>
