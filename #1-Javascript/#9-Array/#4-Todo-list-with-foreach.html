@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul>
+        <li>"new" to add a todo</li>
+        <li>"list" to view all todos</li>
+        <li>"delete" to delete</li>
+        <li>"quit" to quit app</li>
+    </ul>
+    <script>
+        var todos = ["List of Todo"];
+        
+        var input = prompt("What todo");
+
+        while(input !== "quit"){
+            if(input === "list"){
+                listTodos();
+            } else if(input === "new"){ 
+                addTodos();
+            } else if(input === "delete"){
+                deleteTodo();
+            }
+            //ask again for new input
+            input = prompt("What todo?");
+        };
+        console.log("Alright!")
+
+
+
+//Simplify with function
+function listTodos(){
+    todos.forEach(function(todo, i){
+        console.log(i + ": " + todo);
+    });
+    console.log("**********");
+}
+
+function addTodos(){
+    //ask for new todo
+    var newToDo = prompt("Apa aja?");
+    //add new todos to array
+    todos.push(newToDo);
+}
+
+function deleteTodo(){
+    //ask for index of todo to be deleted
+    var index = prompt("Index to be deleted");
+    //delete that todo
+    todos.splice(index, 1)
+}
+
+    </script>
+</body>
+</html>
