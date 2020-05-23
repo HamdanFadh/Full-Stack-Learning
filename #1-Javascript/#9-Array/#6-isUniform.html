@@ -9,8 +9,9 @@
     <script>
         //using for loop
         function isUniform(uni){
-            for(var i = 0; i < uni.length; i++){
-                if(uni[i] !== uni[0]){
+            var start = uni[0];
+            for(var i = 1; i < uni.length; i++){
+                if(uni[i] !== start){
                     return false;
                 }
             }
