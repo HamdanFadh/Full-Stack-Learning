@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isUniform</title>
+</head>
+<body>
+    <script>
+        //using for loop
+        function isUniform(uni){
+            for(var i = 0; i < uni.length; i++){
+                if(uni[i] !== uni[0]){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // using foreach will have problem, because of the result always come with true
+
+        // function isUniform(uni) {
+        //     var first = uni[0];
+        //     uni.forEach(function(element) {
+        //         if(element !== uni[0]){
+        //             return false;
+        //         }
+        //     });
+        //     return true;  //ini yang bikin hasilnya selalu true
+        // }
+
+        //call isUniform
+        isUniform([1,1,1,2]);
+    </script>
+</body>
+</html>
