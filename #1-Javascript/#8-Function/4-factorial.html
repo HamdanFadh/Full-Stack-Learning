@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Exercise</title>
+</head>
+<body>
+    <script>
+        // function factorial(num){
+        //     var result = num;
+        //     if(num == 0){
+        //         return 1;
+        //     }
+        //     while(num > 1){
+        //         num --;
+        //         result *= num;
+        //     }
+        //     return result;
+        // }
+
+
+        //with for loop short solution
+        function factorial(num){
+            // buat variabel hasilnya dulu
+            var result = 1; 
+            // buat variabel terus bertambah
+            for(var i = 2; i <= num; i++){
+                // kalikan varibel terus bertambah dengan hasil
+                result *= i;  
+            }
+            return result;
+        }
+
+
+
+    </script>
+</body>
+</html>
