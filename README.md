@@ -1,3 +1,3 @@
 # Full-Stack-Learning
 
-This repo is just for test.
+This is a repo for fullstack learning 
